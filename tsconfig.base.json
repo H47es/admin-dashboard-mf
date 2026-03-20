@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "lib": [
+            "ES2022",
+            "DOM"
+        ],
+        "typeRoots": [
+            "./types",
+            "./node_modules/@types"
+        ],
+        "baseUrl": ".", // important for module resolution
+        "paths": {
+            "shared/*": [
+                "remote-shared/src/*"
+            ], // allow TS to resolve shared modules
+            "users/*": [
+                "remote-users/src/*"
+            ],
+            "analytics/*": [
+                "remote-analytics/src/*"
+            ]
+        }
+    }
+}
