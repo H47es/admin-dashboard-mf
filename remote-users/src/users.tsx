@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Users() {
     const users = [
-        { id: 1, name: "Hayes" },
-        { id: 2, name: "Wilson" },
-        { id: 3, name: "Youssef" }
+        { id: 1, name: "Reese" },
+        { id: 2, name: "Malcolm" },
+        { id: 3, name: "Dewey" }
     ];
 
     const handleUserClick = async (name: string) => {
